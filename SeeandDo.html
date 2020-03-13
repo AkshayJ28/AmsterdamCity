@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>See and Do</title>
+	<link rel="stylesheet" type="text/css" href='amsterdamCSS.css'>
+	<script type="text/javascript">
+		var i=0;
+		var image =[];
+		var time = 3000;
+
+		image[0]='20.jpg';
+		image[1]='12.jpg';
+		image[2]='22.jpg';
+		image[3]='16.jpg';
+		image[4]='19.jpg';
+		image[5]='21.jpg';
+		image[6]='6.jpg';
+		image[7]='13.jpg';
+
+		function changeImg()
+		{
+			document.slide.src = image[i];
+
+			if (i < image.length - 1) {
+				i++;
+			}
+			else
+			{
+				i=0;
+			}
+
+			setTimeout("changeImg()", time);
+		}
+
+		window.onload = changeImg;
+	</script>
+	<style>
+		a{
+			text-decoration: none;
+			color: black;
+			font-family: "Courier New";
+			font-size: 25px;
+		}
+		h1{
+			font-family: "Courier";
+			font-size: 50px;
+		}
+		p{
+			font-family: "Courier New";
+		}
+	</style>
+</head>
+<body>
+		<div>
+			<img name="slide" width="100%" height="520">
+		</div><br>
+			<H1 align="center">S e e&nbsp;&nbsp; & &nbsp;&nbsp; D o</H1>
+			<br><br>
+		<div>
+			<table cellpadding="20px" align="center">
+				<tr>
+					<th><a href="amsterdam hotels.html"><img src="hotels1.jpg" height="250px" width="400px"> <br><br>Hotels </a></th>
+					<th>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
+					<th><a href="restraurants.html"><img src="15.jpg" height="250px" width="400px"> <br><br>Restaurants </a></th>
+					
+				</tr>
+				<tr>
+					<th><a href="clubss.html"><img src="clubbing.jpg" height="250px" width="400px"> <br><br>Clubs </a></th>
+					<th>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
+					<th><a href="cafe's listing.html"><img src="cafe_bars.jpg" height="250px" width="400px"> <br><br>Cafes and Bars </a></th>
+				</tr>
+				<tr>
+					<th><a href="museum amsterdam.html"><img src="museum1.jpg" height="250px" width="400px"> <br><br>Museums </a></th>
+					<th>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
+					<th><a href="gallery.html"><img src="gallery1.jpg" height="250px" width="400px"> <br><br>Galleries </a></th>
+				</tr>
+				<tr>
+					<th><a href="hospitals.html"><img src="hospitals1.jpg" height="250px" width="400px"> <br><br>Hospitals </a></th>
+					<th>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
+					<th><a href="shopping amsterdam.html"><img src="shopping1.jpg" height="250px" width="400px"> <br><br>Shopping areas </a></th>
+				</tr>
+			</table>
+		</div>
+		<br><br><br>
+		<p align="right">Design and Developed by Akshay Jain&nbsp;&nbsp;</p>
+</body>
+</html>
